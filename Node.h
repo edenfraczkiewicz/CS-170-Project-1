@@ -8,10 +8,13 @@ using namespace std;
 
 typedef vector<vector<int>> intVec;
 
+//------------Node class------------
 struct node {
     int costUniform = 0;
     int costHeuristic = 0;
     int sumCost = 0;
+    int costMisplaced = 0;
+    int euclideanDistance = 0;
 
     node *c0 = NULL;
     node *c1 = NULL;
